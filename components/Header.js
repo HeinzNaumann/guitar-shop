@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <div className="contenedor">
-        <div>
+        <div className={styles.barra}>
           <Link href="/" passHref>
             <Image
               src="/img/logo.svg"
@@ -14,13 +14,14 @@ const Header = () => {
               alt="image logo"
             />
           </Link>
+
+          <nav className={styles.navegacion}>
+            <Link href="/">Inicio</Link>
+            <Link href="/nosotros">Nosotros</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/tienda">Tienda</Link>
+          </nav>
         </div>
-        <nav className={styles.navegacion}>
-          <Link href="/">Inicio</Link>
-          <Link href="/nosotros">Nosotros</Link>
-          <Link href="/blog">Blog</Link>
-          <Link href="/tienda">Tienda</Link>
-        </nav>
       </div>
     </header>
   );
