@@ -5,7 +5,7 @@ import Listado from "../components/Listado";
 
 export default function Home({ guitarras, cursos, blogs }) {
   return (
-    <Layout pagina="Incio">
+    <Layout pagina="Incio" guitarras={guitarras[3]}>
       <main className="contenedor">
         <h1 className="heading">Nuestra Colección</h1>
         <Listado guitarras={guitarras} />
